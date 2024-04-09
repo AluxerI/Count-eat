@@ -1,0 +1,82 @@
+body{
+  height: 2500px;
+  font-family: Geneva;
+  font-size: 100%;
+  margin: 0 0;
+}
+
+header{
+  box-sizing: border-box;
+  width: 1440;
+}
+
+.reg{
+  background-color: #E07A5F20;
+  height: 50px;
+  width: 98%;
+  margin: auto;
+}
+
+.save_recipe{
+  width: 500px;;
+  float: left;
+  margin: 20px 10px 10px 10px;
+}
+
+.reg_button{
+  float:right;
+  margin: 10px 10px 10px 10px;
+}
+
+.wrapper_header{
+  width: 90%;
+  height: 200px;
+  margin: auto;
+}
+
+.logo{
+  width: 180px;
+  float: left;
+}
+
+.title{
+  width: 200px ;
+  padding-top: 50px;
+  padding-left: 10px;
+  float: inline-start;
+}
+
+h1{
+  color:rgba(0, 0, 0, 0.4);
+  font-size: 4em;
+}
+
+.marketing{
+  font-size: 3em;
+  float: right;
+  padding-top: 50px;
+  rotate: 10deg;
+}
+
+.wrapper_search{
+  width: 92%;
+  height: 50px;
+  margin: auto;
+  background-color: rgba(227, 221, 210, 1);
+}
+
+.search{
+  width: 400px;
+  float: left;
+  padding-left: 10px;
+  font-size: 1.5em;
+  margin: 0%;
+}
+
+.search_button{
+  float: right;
+  width: 200px;
+  padding-top: 3px;
+  font-size: 2em;
+}
+
