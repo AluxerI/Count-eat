@@ -221,11 +221,13 @@ main{
 .wrapper_lot{
   display: flex;
   margin-top: 123px;
+  justify-content: space-between;
+  margin-right: calc(20% - 220px)
 }
 
 .base_food{
   margin-left: 49px;
-  width: 980px;
+  width: 80%;
   height: 1100px;
 }
 
@@ -236,8 +238,18 @@ main{
 }
 
 .back{
-  width: 5%;
+  width: 50px;
+  height: 32px;
+  margin-left: 38px;
   float: left;
+  border: none;
+  border-radius: 20px;
+  font-family: 'Jost';
+  font-size: 22px;
+  font-weight: 500;
+  background-color: #F7F5F2;
+  padding: 0;
+  box-shadow: 1px 2px 7px 0px #2c31333b;
 }
 
 .Name_food{
@@ -262,25 +274,61 @@ main{
 
 .wrapper {
   width: 100%;
-  height: 900px;
+  height: 1100px;
   display: flex;
   flex-wrap: wrap;
-  text-align: center;
-  gap: 10px;
+  justify-content: space-around;
+  column-gap: 2vw;
+  row-gap: 1vw;
 }
 
 .wrapper-item {
-  font-family: 'Open Sans', sans-serif;
-  background-color: #ececec;
+  font-family: 'Caveat';
+  background-color: #F7F5F2;
+  color: rgb(26 45 109);
   width: 400px;
   height: 465px;
-  padding-bottom: 2%;
-  border-radius: 20px;
-  margin: auto;
+  padding-bottom: 14px;
+  border-radius: 10px;
   margin-top: 44px;
   padding-top: 20px;
   text-align: center;
-  font-size: 2em;
+  box-shadow: 1px 2px 7px 0px #2c31333b;;
+}
+
+.item-title {
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.item-img {
+    width: 350px;
+    height: 200px;
+    margin-top: 12px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.item-description {
+    position: absolute;
+    width: 350px;
+    margin: auto;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 32px;
+    font-weight: 400;
+    color: black;
+    margin-top: 12px;
+}
+
+.item-mark {
+    position: relative;
+    float: right;
+    margin-top: 128px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    width: 96px;
+    height: 77px;
 }
 
 .padination{
