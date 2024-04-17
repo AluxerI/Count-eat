@@ -1,0 +1,472 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+  height: 2144px;
+  font-family: 'Jost';
+  font-size: 100%;
+  margin: 0 0;
+}
+
+header{
+  box-sizing: border-box;
+  width: 1440;
+}
+
+.bg-img {
+    position: absolute;
+    right: 0;
+    margin-right: 18px;
+}
+
+.reg{
+  position: absolute;
+  right: 0;
+  height: 52px;
+  width: 705px;
+  margin-right: 124px;
+  margin-top: 24px;
+}
+
+.save_recipe{
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  float: left;
+  font-size: 22px;
+  font-weight: 300;
+  width: 450px;
+  height: 45px;
+  margin-top: 6px;
+  margin-left: 6px;
+  padding-left: 20px;
+  padding-top: 6px;
+  color: rgb(0 0 0 / 80%);
+  text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+}
+
+.reg_button {
+  margin-left: 77px;
+  float:right;
+  border: none;
+  background-color: #00000000;
+  font-family: 'Jost';
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  color: rgb(0 0 0 / 40%);
+  padding: 0;
+}
+
+.wrapper_header{
+  width: 86.6%;
+  height: 269px;
+  margin: auto;
+  display:flex;
+}
+
+.logo{
+  float: left;
+  margin-top: 48px;
+}
+
+.logo img {
+    width: 198px;
+    height: 221px;
+}
+
+.title{
+    width: 380px;
+  height: 73px;
+  margin-top: 105px;
+  margin-left: 21px;
+}
+
+.title h1{
+  color:rgba(0, 0, 0, 40%);
+  font-family: 'Jost';
+  font-size: 68px;
+  font-weight: 700;
+  width: 380px;
+  height: 73px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.title span {
+    color: #E07A5F;
+}
+
+.description {
+    margin-top: 18px;
+    font-family: 'Jost';
+    font-size: 20px;
+    font-weight: 600;
+    color:rgba(0, 0, 0, 40%);
+}
+
+main{
+  align-items: center;
+}
+
+.slider{
+  width: 100%;
+  height: 651px;
+  background-color: rgb(168, 168, 168);
+  font-size: 10em
+}
+
+.slider p{
+  padding-top: 100px;
+  text-align: center;
+}
+
+.wrapper_search {
+    position: relative;
+    margin-top: 61px;
+    height: 42px;
+    width: 100%;
+    margin-bottom: 58px-30px;
+}
+
+.search {
+    height: 42px;
+    width: 86.875%;
+    margin-left: 94px;
+    background-color: rgba(217, 217, 217, 0.25);
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-p {
+    overflow: hidden;
+    padding-top: 2px;
+    padding-left: 30px;
+    font-family: 'Jost';
+    font-size: 22px;
+    font-weight: 500;
+    color:rgb(0, 0, 0);
+    width: 60%;
+    border: none;
+    background-color: #00000000;
+    border-radius: 40px;
+}
+
+.filter {
+    font-size: 40px;
+    font-family: 'Jost';
+    font-weight: 400;
+    background-color: #00000000;
+    border: none;
+    padding: 0;
+    width: 124px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.search-button button {
+    border: none;
+    border-radius: 40px;
+    width: 20.347vw;
+    height:100%;
+    background-color: #E07A5F;
+    margin-bottom: 10px;
+    font-family: 'Jost';
+    font-size: 25px;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 40%);
+}
+
+.filter p {
+    padding: 0;
+    margin: 0;
+    font-family: 'Jost';
+    font-size: 30px;
+    font-weight: 800;
+    color: rgb(0, 0, 0);
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.history{
+  background: url(/image/история\ поиска.svg) no-repeat;
+  width: 379px;
+  height: 1130px;
+  float: left;
+  color: rgba(0, 0, 0, 40%);
+  margin-left: 15px;
+}
+
+.history-p{
+  font-family: 'Jost';
+  font-size: 32px;
+  font-weight: 400;
+  width: 392px;
+  height: 40px;
+  margin-left: 30px;
+  margin-top: 40px;
+}
+
+.history_list {
+    margin-left: 55px;
+    margin-top: 75px;
+    margin-right: 25px;
+}
+
+.history_list p {
+    font-size: 28px;
+    font-weight: 500;
+    color: #000000;
+    margin-top: 55px;
+}
+
+.wrapper_lot{
+  display: flex;
+  justify-content: space-between;
+  margin-right: calc(20% - 220px)
+}
+
+.base_food{
+  margin-left: 2.5694vw;
+  width: 80%;
+  height: 1100px;
+}
+
+.title_base{
+  color: gray;
+  width: 90%;
+  font-size: 3em;
+}
+
+.back{
+  width: 50px;
+  height: 32px;
+  margin-left: 38px;
+  float: left;
+  border: none;
+  border-radius: 20px;
+  font-family: 'Jost';
+  font-size: 22px;
+  font-weight: 500;
+  background-color: #F7F5F2;
+  padding: 0;
+  box-shadow: 1px 2px 7px 0px #2c31333b;
+  
+}
+
+.back_button{
+  border: none;
+  background: none;
+  margin-top: 40px;
+  color: #E07A5F;
+  float: inline-start;
+  font-family: 'Jost';
+  font-size: 25px;
+  font-weight: 700;
+  
+}
+
+.Name_food{
+    margin-top: 40px;
+    margin-left: 5px;
+    color: #E07A5F;
+    float: inline-start;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.Number_page{
+  float: right; 
+  font-size: 32px;
+  font-weight: 300;
+  margin-right: 18px;
+  font-size: 32px;
+  font-weight: 300;
+}
+
+/* .recipe{ */
+.food-item{
+  display: none;
+}
+
+.wrapper {
+  width: 100%;
+  height: 872px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  column-gap: 20px;
+  row-gap: 20px;
+  padding-top: 43px;
+  margin-left: 22px;
+}
+
+.wrapper-item {
+  font-family: 'Jost';
+  background-color: rgba(224, 122, 95, 30%);
+  color: rgba(0, 0, 0, 40%);
+  width: 265px;
+  height: 265px;
+  padding-bottom: 14px;
+  border-radius: 20px;
+  padding-top: 10px;
+  text-align: left;
+}
+
+.item-title {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.item-img {
+    width: 100%;
+    height: 130px;
+    margin-top: 10px;
+    object-fit: cover;
+}
+
+.item-description {
+    position: absolute;
+    width: 230px;
+    margin: auto;
+    margin-left: 18px;
+    margin-right: 18px;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(0,0,0,40%);
+    margin-top: 10px;
+}
+
+.padination{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  font-size: 32px;
+  font-family: 'Jost';
+  font-weight: 400;
+}
+
+.padination a {
+    text-decoration: none;
+    color: rgba(0,0,0,40%);
+}
+
+.login-page {
+    height: 1000px;
+    overflow: hidden;
+}
+
+.wrapper-login {
+    width: 91.25%;
+    height: 470px;
+    background-color: rgba(224,112,95,30%);
+    border-radius: 30px;
+    margin: auto;
+    margin-top: 90px;
+}
+
+.login {
+    width: 669px;
+    height: 492px;
+    margin: auto;
+    padding-top: 56px;
+    padding-bottom: 80px;
+}
+
+.login p {
+    font-size: 40px;
+    font-weight: 300;
+    color: rgba(0,0,0,40%);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-string {
+    width: 100%;
+    border: none;
+    height: 40px;
+    border-radius: 25px;
+    padding-left: 20px;
+    font-family: 'Jost';
+    font-size: 22px;
+    font-weight: 300;
+    margin-top: 25px;
+    overflow: hidden;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+}
+
+.login-registration {
+    margin-top: 20px;
+    width: 130px;
+}
+
+.login-registration a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.login-button {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.login-button button {
+    border: none;
+    background-color: #E07A5F;
+    border-radius: 50px;
+    color: rgba(0,0,0,40%);
+    height: 42px;
+    width: 236px;
+    font-family: 'Jost';
+    font-size: 22px;
+    font-weight: 500;
+}
