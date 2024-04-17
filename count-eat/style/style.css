@@ -414,8 +414,9 @@ main {
   font-weight: 300;
 }
 
-/* .recipe { */
-.food-item {
+/*.food-item {*/
+
+.hidden {
   display: none;
 }
 
@@ -600,10 +601,9 @@ main {
   transition: transform 0.25s ease;
 }
 
-.carousel__prev{
+.carousel__prev {
   margin-left: 45%;
 }
-
 
 .carousel__prev i,
 .carousel__next i {
