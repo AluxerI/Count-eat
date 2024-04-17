@@ -187,6 +187,7 @@ header {
   text-align: center;
   color: rgb(0 0 0 / 40%);
   padding: 0;
+  text-decoration: none;
 }
 
 .wrapper_header {
@@ -321,12 +322,13 @@ main {
 }
 
 .history {
-  background: url(/image/история\ поиска.svg) no-repeat;
+  background: url(../image/история\ поиска.svg) no-repeat;
   width: 379px;
   height: 1130px;
   float: left;
   color: rgba(0, 0, 0, 40%);
   margin-left: 15px;
+  overflow: hidden;
 }
 
 .history-p {
@@ -343,6 +345,7 @@ main {
   margin-left: 55px;
   margin-top: 75px;
   margin-right: 25px;
+  margin-bottom: 100px;
 }
 
 .history_list p {
@@ -484,9 +487,10 @@ main {
   color: rgba(0, 0, 0, 40%);
 }
 
+/*Тут начинается страница входа*/
+
 .login-page {
-  height: 1000px;
-  overflow: hidden;
+  height: 100vh;
 }
 
 .wrapper-login {
@@ -694,4 +698,16 @@ main {
   border-right-width: 5px;
   transform: translate3d(-1px, 0, -40px) rotateY(90deg);
   transform-origin: 100%;
+}
+
+/*Тут начинается страница профиля*/
+
+.profile-page {
+    height: 100vh;
+}
+
+.wrapper-profile {
+    margin-top: 86px;
+    width: 91.25%;
+    height: 628px;
 }

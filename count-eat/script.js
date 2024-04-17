@@ -89,14 +89,25 @@ const foodBtns = document.querySelectorAll(".wrapper-item");
 const recipeElement = document.querySelector(".recipe");
 const foodItemElement = document.querySelector(".food-item");
 const backBtn = document.querySelector(".back_button");
+const historyList = document.querySelector(".history_list");
+const USER_LS = 'UserLocalStorage'
 
-foodBtns.forEach((button) => {
+foodBtns.forEach((button, index) => {
   button.addEventListener("click", (e) => {
     e.preventDefault();
-    console.log(button);
+    console.log(index);
     foodItemElement.classList.add("hidden");
     recipeElement.classList.remove("hidden");
     backBtn.classList.remove("hidden");
+
+    let listItems = document.querySelectorAll(".history_list p");
+    historyList.insertAdjacentHTML("afterbegin", `<p>${index}</p>`);
+    localStorage.setItem(USER_LS, text)
+    if (listItems.length > 10) {
+      document
+        .querySelector(".history_list")
+        .removeChild(listItems[listItems.length - 1]);
+    }
   });
 });
 
