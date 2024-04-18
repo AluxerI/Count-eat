@@ -390,7 +390,8 @@ main {
 
 .back_button {
   border: none;
-  background: none;
+  background: rgba(217, 217, 217, 0.25);
+  border-radius: 20px;
   margin-top: 40px;
   color: #e07a5f;
   float: inline-start;
@@ -433,6 +434,13 @@ main {
   row-gap: 20px;
   padding-top: 43px;
   margin-left: 22px;
+}
+
+@media (min-width: 1631px) {
+    .wrapper {
+        justify-content: center;
+        column-gap: 50px;
+    }
 }
 
 .wrapper-item {
