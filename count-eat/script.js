@@ -16,7 +16,7 @@ var width,
 
 function resize() {
   (width = Math.max(window.innerWidth * 0.25, 275)),
-    (height = window.innerHeight * 0.45),
+    (height = window.innerHeight * 0.35),
     (totalWidth = width * items.length);
 
   slider.style.width = totalWidth + "px";
