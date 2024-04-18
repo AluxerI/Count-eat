@@ -390,8 +390,7 @@ main {
 
 .back_button {
   border: none;
-  background: rgba(217, 217, 217, 0.25);
-  border-radius: 20px;
+  background: none;
   margin-top: 40px;
   color: #e07a5f;
   float: inline-start;
@@ -434,13 +433,6 @@ main {
   row-gap: 20px;
   padding-top: 43px;
   margin-left: 22px;
-}
-
-@media (min-width: 1631px) {
-    .wrapper {
-        justify-content: center;
-        column-gap: 50px;
-    }
 }
 
 .wrapper-item {
@@ -575,7 +567,6 @@ main {
   padding: 0;
   margin: 0;
   width: 100%;
-  height: 100%;
   background: #ffffff;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2f3539",endColorstr="#1e272e",GradientType=1);
 }
@@ -617,6 +608,7 @@ main {
 
 .carousel__prev i,
 .carousel__next i {
+  vertical-align: top;
   font-size: 50px;
   color: var(--box-border);
   cursor: pointer;
@@ -626,15 +618,11 @@ main {
 .carousel__next:hover {
   transform: scale(1.25);
 }
-.carousel__prev {
-  left: 40%;
-}
-.carousel__next {
-  right: 40%;
-}
+
 .carousel__body {
   width: 100%;
   padding: 30px 0 30px 0;
+  height: 600px;
   overflow: hidden;
 }
 .carousel__body .carousel__slider {
@@ -654,7 +642,7 @@ main {
 .carousel__body .carousel__slider__item .item__3d-frame {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 80%;
   transition: transform 1s ease-in-out;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
