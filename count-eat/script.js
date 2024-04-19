@@ -16,7 +16,7 @@ var width,
 
 function resize() {
   (width = Math.max(window.innerWidth * 0.25, 275)),
-    (height = window.innerHeight * 0.25),
+    (height = window.innerHeight * 0.35),
     (totalWidth = width * items.length);
 
   slider.style.width = totalWidth + "px";
@@ -90,7 +90,7 @@ const recipeElement = document.querySelector(".recipe");
 const foodItemElement = document.querySelector(".food-item");
 const backBtn = document.querySelector(".back_button");
 const historyList = document.querySelector(".history_list");
-const USER_LS = 'UserLocalStorage'
+const USER_LS = "UserLocalStorage";
 
 foodBtns.forEach((button, index) => {
   button.addEventListener("click", (e) => {
@@ -101,9 +101,12 @@ foodBtns.forEach((button, index) => {
     backBtn.classList.remove("hidden");
 
     let listItems = document.querySelectorAll(".history_list p");
-    historyList.insertAdjacentHTML("afterbegin", `<p>${index}</p>`);
-    localStorage.setItem(USER_LS, text)
-    if (listItems.length > 10) {
+    console.log(button.querySelector(".item-title").textContent);
+    historyList.insertAdjacentHTML(
+      "afterbegin",
+      `<p>${button.querySelector(".item-title").textContent}</p>`
+    );
+    if (listItems.length > 6) {
       document
         .querySelector(".history_list")
         .removeChild(listItems[listItems.length - 1]);
